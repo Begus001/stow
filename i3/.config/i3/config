@@ -137,11 +137,20 @@ bindsym $mod+m exec "xset dpms 10 30 60; i3lock --nofork; xset dpms 0 0 0"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
+# Screenshot
+bindsym --release Print exec "scregcp -s $HOME/Pictures/"
+bindsym --release Shift+Print exec "scregcp $HOME/Pictures/"
+
 #######################
 # EXEC
 #######################
 
 exec --no-startup-id dex --autostart --environment i3
+
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill Pictures/bg.png
+# Daemons
+exec_always --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
 
 # Config
 exec_always --no-startup-id xset r rate 200 35
