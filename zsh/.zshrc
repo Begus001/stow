@@ -70,6 +70,7 @@ alias gri="git rebase -i"
 alias gst="git stash"
 alias gm="git merge"
 alias grs="git restore --staged"
+alias gsm="git submodule"
 
 # LS
 alias l='ls --color=always -F'
