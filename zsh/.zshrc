@@ -27,6 +27,8 @@ compinit
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 source /usr/share/fzf/key-bindings.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_STRATEGY=(completion)
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent -t 2h > "$XDG_RUNTIME_DIR/ssh-agent.env"
