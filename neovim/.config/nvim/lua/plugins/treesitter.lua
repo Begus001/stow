@@ -5,6 +5,7 @@ return {
 			"cpp",
 			"haskell",
 			"rust",
+			"svelte",
 		}
 	}
 }
