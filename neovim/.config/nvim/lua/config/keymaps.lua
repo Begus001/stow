@@ -22,12 +22,3 @@ vim.keymap.set("n", "<leader>ae", function()
 	vim.g.copilot_enabled = not vim.g.copilot_enabled
 end, { desc = "Toggle copilot" })
 
--- Navigate popup with left right
-local cmp = require("blink-cmp")
-vim.keymap.set({ "i", "s" }, "<C-l>", function()
-	cmp.select_next()
-end)
-vim.keymap.set({ "i", "s" }, "<C-h>", function()
-	cmp.select_prev()
-end)
-
