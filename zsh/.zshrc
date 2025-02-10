@@ -2,7 +2,21 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
-setopt autocd autopushd extendedglob globdots nomatch notify incappendhistory histsavenodups histexpiredupsfirst histignoredups histignorealldups histignorespace histfindnodups histsavenodups
+setopt autocd
+setopt autopushd
+setopt extendedglob
+setopt globdots
+setopt nomatch
+setopt notify
+setopt incappendhistory
+setopt histsavenodups
+setopt histexpiredupsfirst
+setopt histignoredups
+setopt histignorealldups
+setopt histignorespace
+setopt histfindnodups
+setopt histsavenodups
+setopt share_history
 stty -ixon
 
 ##################
