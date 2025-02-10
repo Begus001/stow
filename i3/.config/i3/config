@@ -160,7 +160,7 @@ exec_always --no-startup-id setxrandrconfig 3
 # Lock
 exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset dpms 0 0 0
-exec --no-startup-id "xidlehook --not-when-fullscreen --timer 300 'xset dpms 10 30 60; i3lock --nofork' 'xset dpms 0 0 0'"
+exec --no-startup-id "xidlehook --not-when-fullscreen --not-when-audio --timer 300 'xset dpms 10 30 60; i3lock --nofork' 'xset dpms 0 0 0'"
 
 # Autostart
 exec_always --no-startup-id picom
