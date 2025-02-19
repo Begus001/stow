@@ -28,6 +28,11 @@ bindkey -M viins '^?' backward-delete-char
 bindkey -M viins '^H' backward-delete-char
 bindkey -M viins '^W' backward-kill-word
 bindkey -M viins '^S' vi-cmd-mode
+bindkey -M vicmd '^Y' redo
+
+# To enter vim normal mode by default
+# zle-line-init() { zle -K vicmd; }
+# zle -N zle-line-init
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
