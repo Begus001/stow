@@ -179,4 +179,8 @@ return {
 			require("mini.align").setup()
 		end,
 	},
+	{
+		"windwp/nvim-ts-autotag",
+		enabled = false,
+	}
 }
