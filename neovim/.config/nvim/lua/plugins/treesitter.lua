@@ -1,12 +1,12 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	opts = {
-		ensure_installed = {
-			"cpp",
-			"haskell",
-			"qmljs",
-			"rust",
-			"svelte",
-		}
-	}
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    ensure_installed = {
+      "cpp",
+      "haskell",
+      "qmljs",
+      "rust",
+      "svelte",
+    },
+  },
 }
