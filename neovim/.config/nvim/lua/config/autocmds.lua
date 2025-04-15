@@ -1,8 +1,7 @@
 -- Disable copilot on startup
-vim.api.nvim_create_autocmd("VimEnter", {
+vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
-    print("Copilot disabled")
     vim.cmd("Copilot disable")
-    vim.g.copilot_enabled = false
+    vim.b.copilot_enabled = false
   end,
 })
