@@ -92,6 +92,8 @@ alias gst="git stash"
 alias gm="git merge"
 alias grs="git restore --staged"
 alias gsm="git submodule"
+alias gsw="git switch"
+alias gswc="git switch --create"
 
 # LS
 alias l='ls --color=always -F'
@@ -106,3 +108,5 @@ alias llabs='ls --color=always -alFhd "$PWD/"*'
 
 # Clip
 alias clip="xclip -selection clipboard"
+
+alias nv="neovide --fork"
