@@ -1,11 +1,4 @@
--- Disable copilot on startup
-vim.api.nvim_create_autocmd("BufEnter", {
-  callback = function()
-    vim.cmd("Copilot disable")
-    vim.b.copilot_enabled = false
-  end,
-})
-
+-- Change Ctrl+c behavior in command window
 vim.api.nvim_create_augroup("CmdwinMappings", { clear = true })
 vim.api.nvim_create_autocmd("CmdwinEnter", {
   group = "CmdwinMappings",

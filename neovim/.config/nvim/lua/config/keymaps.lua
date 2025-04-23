@@ -8,12 +8,17 @@ end, { desc = "Open diagnostic popup" })
 
 -- Toggle copilot
 vim.keymap.set("n", "<leader>ae", function()
-  if vim.b.copilot_enabled then
-    vim.cmd("Copilot disable")
-    print("Copilot disabled")
-  else
-    vim.cmd("Copilot enable")
+  local cmd = require("copilot.command")
+  local client = require("copilot.client")
+
+  if client.is_disabled() then
+    cmd.enable()
     print("Copilot enabled")
+  else
+    cmd.disable()
+    print("Copilot disabled")
   end
-  vim.b.copilot_enabled = not vim.b.copilot_enabled
+
 end, { desc = "Toggle copilot" })
+
+vim.keymap.set("n", "<leader>as", "<cmd>Copilot status<cr>")
