@@ -61,8 +61,8 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-bindsym $mod+a focus parent
-bindsym $mod+y focus child
+bindsym $mod+o focus parent
+bindsym $mod+i focus child
 
 bindsym $mod+space focus mode_toggle
 
