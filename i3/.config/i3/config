@@ -44,8 +44,8 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-bindsym Mod1+$mod+l workspace next_on_output
-bindsym Mod1+$mod+h workspace prev_on_output
+bindsym $mod+n workspace next_on_output
+bindsym $mod+p workspace prev_on_output
 
 bindsym Mod1+$mod+Right workspace next_on_output
 bindsym Mod1+$mod+Left workspace prev_on_output
@@ -78,6 +78,9 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+n move container to workspace next_on_output
+bindsym $mod+Shift+p move container to workspace prev_on_output
 
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
