@@ -94,6 +94,7 @@ alias grs="git restore --staged"
 alias gsm="git submodule"
 alias gsw="git switch"
 alias gswc="git switch --create"
+alias gsh="git show"
 
 # LS
 alias l='ls --color=always -F'
