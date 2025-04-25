@@ -9,6 +9,10 @@ vim.opt.expandtab = true
 vim.g.autoformat = false
 vim.opt.wrap = true
 
+-- Spelling
+vim.o.spell = true
+vim.o.spelllang = "en,de"
+
 -- Set root to the argument given to nvim
 vim.g.root_spec = {
   function()
