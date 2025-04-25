@@ -13,20 +13,13 @@ vim.opt.wrap = true
 vim.o.spell = true
 vim.o.spelllang = "en,de"
 
--- Set root to the argument given to nvim
-vim.g.root_spec = {
-  function()
-    local args = vim.fn.argv()
-    if #args > 0 then
-      if vim.fn.isdirectory(args[1]) == 1 then
-        return args[1]
-      end
-    end
-  end,
-  "lsp",
-  "lua",
-  "cwd",
-}
+-- Change directory when given as argument
+local args = vim.fn.argv()
+if #args > 0 then
+  if vim.fn.isdirectory(args[1]) then
+    vim.fn.chdir(args[1])
+  end
+end
 
 if vim.g.neovide then
   vim.g.snacks_animate = false
