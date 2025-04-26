@@ -1,6 +1,7 @@
 -- Disable inlay hints
 vim.lsp.inlay_hint.enable(false)
 
+vim.o.scrolloff = 16
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
