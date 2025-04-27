@@ -5,6 +5,9 @@ return {
       qmlls = {
         cmd = { "qmlls6" },
       },
+      mesonlsp = {
+        cmd = { "mesonlsp", "--lsp", "--full" },
+      }
     },
   },
 }
