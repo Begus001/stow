@@ -6,3 +6,12 @@ vim.api.nvim_create_autocmd("CmdwinEnter", {
     vim.keymap.set({ "i", "v" }, "<C-c>", "<Esc>", { buffer = true, remap = true })
   end,
 })
+
+-- Spelling
+vim.api.nvim_create_autocmd("FileType", {
+  callback = function()
+    vim.opt_local.spell = true
+    vim.opt_local.spelllang = "en,de"
+  end,
+  pattern = "markdown"
+})
