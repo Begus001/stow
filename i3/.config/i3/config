@@ -177,10 +177,10 @@ exec --no-startup-id "redshift -t 6500:2500 -l0:0 &"
 #######################
 font pango:liberation 10
 
-hide_edge_borders smart_no_gaps
+# hide_edge_borders smart_no_gaps
 for_window[all] title_window_icon yes
 for_window[all] title_window_icon padding 5
-for_window[all] border normal 1
+for_window[all] border normal 2
 
 # set $bgcolor    #2980b9
 # set $in-bgcolor #363636
