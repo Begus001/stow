@@ -10,9 +10,8 @@ vim.opt.expandtab = true
 vim.g.autoformat = false
 vim.opt.wrap = true
 
--- Spelling
-vim.o.spell = true
-vim.o.spelllang = "en,de"
+-- Correct indenting on lsp-less files
+vim.o.indentexpr = "nvim_treesitter#indent()"
 
 -- Change directory when given as argument
 local args = vim.fn.argv()
