@@ -11,15 +11,18 @@ vim.g.autoformat = false
 vim.opt.wrap = true
 
 -- Correct indenting on lsp-less files
-vim.o.indentexpr = "nvim_treesitter#indent()"
+vim.opt_global = "nvim_treesitter#indent()"
 
 -- Change directory when given as argument
 local args = vim.fn.argv()
 if #args > 0 then
-  if vim.fn.isdirectory(args[1]) then
+  if vim.fn.isdirectory(args[1]) == 1 then
     vim.fn.chdir(args[1])
   end
 end
+
+-- Set root to cwd
+vim.g.root_spec = { "lua", "cwd" }
 
 if vim.g.neovide then
   vim.g.snacks_animate = false
