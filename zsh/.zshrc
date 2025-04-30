@@ -106,3 +106,7 @@ alias llabs='ls --color=always -alFhd "$PWD/"*'
 alias clip="xclip -selection clipboard"
 
 alias nv="neovide --fork"
+
+# XDG
+alias xo="xdg-open"
+alias xm="xdg-mime"
