@@ -49,7 +49,7 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(completion)
 
-eval `keychain --eval --agents ssh id_ed25519`
+eval `keychain -q --eval --agents ssh id_ed25519`
 
 ##################
 # ENV
