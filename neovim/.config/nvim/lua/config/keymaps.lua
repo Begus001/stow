@@ -22,3 +22,5 @@ vim.keymap.set("n", "<leader>ae", function()
 end, { desc = "Toggle copilot" })
 
 vim.keymap.set("n", "<leader>as", "<cmd>Copilot status<cr>")
+
+vim.keymap.set({ "n", "i" }, "<C-c>", "<esc>")
