@@ -64,7 +64,7 @@ export KEYTIMEOUT=1
 ##################
 
 # GIT
-alias gs="git status"
+alias gs="git status --show-stash"
 alias gl="git log"
 alias glo="git log --oneline"
 alias ga="git add"
