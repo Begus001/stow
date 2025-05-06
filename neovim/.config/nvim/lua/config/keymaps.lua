@@ -27,3 +27,6 @@ vim.keymap.set({ "n", "i" }, "<C-c>", "<esc>")
 
 vim.keymap.set({ "n", "x" }, "ü", "[", { remap = true })
 vim.keymap.set({ "n", "x" }, "+", "]", { remap = true })
+
+vim.keymap.set({ "n", "x" }, "<leader>ci", ":TSCppDefineClassFunc<cr>")
+
