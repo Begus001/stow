@@ -27,3 +27,10 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end,
   pattern = "meson.build"
 })
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  group = vim.api.nvim_create_augroup("DisableLineComment", { clear = true }),
+  callback = function()
+    vim.opt.formatoptions:remove({ "c", "r", "o" })
+  end
+})
