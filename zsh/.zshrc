@@ -110,3 +110,4 @@ alias nv="neovide --fork"
 # XDG
 alias xo="xdg-open"
 alias xm="xdg-mime"
+PROG=tea _CLI_ZSH_AUTOCOMPLETE_HACK=1 source "/home/main/.config/tea/autocomplete.zsh"
