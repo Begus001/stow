@@ -8,7 +8,7 @@ return {
           "--background-index",
           "--clang-tidy",
           "--header-insertion=iwyu",
-          "--completion-style=bundled",
+          "--completion-style=detailed",
           "--function-arg-placeholders",
           "--fallback-style=llvm",
           "--header-insertion-decorators",
