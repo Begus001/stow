@@ -9,10 +9,11 @@ return {
           "--clang-tidy",
           "--header-insertion=iwyu",
           "--completion-style=detailed",
-          "--function-arg-placeholders",
+          "--function-arg-placeholders=0",
           "--fallback-style=llvm",
           "--header-insertion-decorators",
           "--compile-commands-dir=build",
+          -- "--experimental-modules-support",
         },
       },
       qmlls = {
