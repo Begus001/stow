@@ -18,7 +18,6 @@ vim.keymap.set("n", "<leader>ae", function()
     cmd.disable()
     print("Copilot disabled")
   end
-
 end, { desc = "Toggle copilot" })
 
 vim.keymap.set("n", "<leader>as", "<cmd>Copilot status<cr>")
@@ -30,3 +29,10 @@ vim.keymap.set({ "n", "x" }, "+", "]", { remap = true })
 
 vim.keymap.set({ "n", "x" }, "<leader>ci", ":TSCppDefineClassFunc<cr>")
 
+vim.keymap.set("n", "<leader>_", function()
+  vim.ui.input({ prompt = "Filetype", completion = "filetype" }, function(ft)
+    if ft then
+      Snacks.scratch.open({ ft = ft })
+    end
+  end)
+end, { desc = "Open scratch buffer with ft" })
