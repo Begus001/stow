@@ -72,3 +72,9 @@ keybinding:
     increaseRenameSimilarityThreshold: )
     decreaseRenameSimilarityThreshold: (
     openDiffTool: <c-t>
+customCommands:
+  - key: D
+    description: Diffview
+    # command: "echo neovide -- -c 'DiffviewOpen {{.SelectedCommitRange.From}} {{.SelectedCommitRange.To}}'"
+    command: neovide -- -c "DiffviewOpen {{.SelectedCommitRange.From}} {{.SelectedCommitRange.To}}"
+    context: commits
