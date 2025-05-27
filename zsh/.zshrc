@@ -47,6 +47,7 @@ eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(completion)
 
 eval `keychain -q --eval --quiet id_ed25519`
